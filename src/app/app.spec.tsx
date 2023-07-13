@@ -8,10 +8,8 @@ describe('App', () => {
     expect(baseElement).toBeTruthy();
   });
 
-  it('should have a greeting as the title', () => {
+  it('should have a module one message', () => {
     const { getByText } = render(<App />);
-    expect(
-      getByText(/Welcome nx-react-standalone-webpack-storybook/gi)
-    ).toBeTruthy();
+    expect(getByText(/Welcome to One!/gi)).toBeTruthy();
   });
 });

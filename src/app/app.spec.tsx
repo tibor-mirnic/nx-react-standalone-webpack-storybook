@@ -10,6 +10,6 @@ describe('App', () => {
 
   it('should have a module one message', () => {
     const { getByText } = render(<App />);
-    expect(getByText(/Welcome to One!/gi)).toBeTruthy();
+    expect(getByText(/Welcome to One!/)).toBeTruthy();
   });
 });
